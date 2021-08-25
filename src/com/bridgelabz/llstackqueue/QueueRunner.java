@@ -12,6 +12,8 @@ public class QueueRunner {
 		queue.enqueue(myThirdNode);
 		queue.enqueue(mySecondNode);
 		queue.enqueue(myFirstNode);
+		
+		queue.dequeue();
 		queue.printQueue();
 		
 	}

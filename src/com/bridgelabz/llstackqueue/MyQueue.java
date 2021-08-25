@@ -27,6 +27,13 @@ public class MyQueue <K> {
 		}
 	}
 	
+	public void dequeue() {
+		System.out.println("Removed first element: " +head.getKey());
+		INode tempNode = head.getNext();
+		this.head = tempNode;
+		
+	}
+	
 	public void printQueue() {
 		StringBuffer printformat = new StringBuffer("My Nodes: ");
 		INode tempNode = head;
