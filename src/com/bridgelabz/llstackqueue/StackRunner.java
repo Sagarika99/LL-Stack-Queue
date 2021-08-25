@@ -12,6 +12,11 @@ public static void main(String[] args) {
 	stack.push(myFirstNode);
 	stack.push(mySecondNode);
 	stack.push(myThirdNode);
+	
+	System.out.println("Element on top of stack: ");
+	stack.peek();
+	System.out.println("After pop: ");
+	stack.pop();
 	stack.printStack();
 	
 	}

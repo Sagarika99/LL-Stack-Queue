@@ -28,6 +28,15 @@ public class MyLinkedList <K> {
 		}		
 	}
 	
+	public void peek() {
+		System.out.println(this.head.getKey());
+	}
+	
+	public void pop() {
+		INode tempNode = head.getNext();
+		this.head = tempNode;
+	}
+	
 	public void printStack() {
 		StringBuffer printformat = new StringBuffer("My Nodes: ");
 		INode tempNode = head;
